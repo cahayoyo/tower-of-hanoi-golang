@@ -1,7 +1,13 @@
 package main
 
-import "golang_towerofhanoi/TOHPackage"
+import (
+	"fmt"
+	"golang_towerofhanoi/TOHPackage"
+)
 
 func main() {
-	TOHPackage.TOH(3, 1, 2, 3)
+	var disc int
+	fmt.Print("Enter Disc : ")
+	fmt.Scan(&disc)
+	TOHPackage.TOH(disc, 1, 2, 3)
 }
